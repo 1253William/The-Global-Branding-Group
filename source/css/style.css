@@ -156,7 +156,7 @@ button {
 	outline: medium none;
 }
 a:hover {
-    color: #DCE864;
+    color: var(--secondary-color);
 }
 .box20 .title a{
     color: #fff;
