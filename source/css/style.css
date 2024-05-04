@@ -30,7 +30,7 @@
   margin: -120px 0 0 -50px;
   position: absolute;
   top: 10%;
-  width: 100%; }
+  width: 110%; }
 
 #preloader {
   background: #fff;
@@ -352,6 +352,13 @@ z-index: -1;
     color: var(--background-color);
     border-color: var(--secondary-color);
     background: var(--secondary-color);
+}
+
+.slider-btn .btn.ss-btn.non-active{
+    background: none;
+    color: var(--background-color);
+    border-color: var(--primary-color);
+    background: var(--primary-color);
 }
 
 .slider-btn:hover .btn-after{
@@ -2891,7 +2898,7 @@ padding-top: 30px;
      display: inline-block;
 }
 .service-details2 .section-title h5{
-    color: #DCE864;
+    color:var(--secondary-color);
 }
 .service-details2 .section-title h2{
     color: #fff;
@@ -4847,7 +4854,7 @@ z-index: -1;
     width: 100%;
     left: 0;
     top: 0;
-    background: #dce864;
+    background: var(--secondary-color);
     position: absolute;
 }
 .intregrations-item{
@@ -4863,7 +4870,7 @@ z-index: -1;
 }
 .intregrations-item:hover{
     background: #000;
-    border-bottom: 3px solid #dce864;
+    border-bottom: 3px solid var(--secondary-color);
 }
 .intregrations-item:hover h3{
     color: #fff;
