@@ -132,7 +132,7 @@ background-position: 0 -100px;
   width: 265px;
 }
     .slider-content h2 {
-  font-size: 80px;
+  font-size: 65px;
 }
 .slider-bg .banner-img {
   height: 645px;
@@ -654,6 +654,7 @@ margin-bottom: 50px;
     .skills-img img{
         width: 100%;
     }
+
    .single-post2 {
   display: inline-block;
   max-width: 100%;
@@ -1336,6 +1337,15 @@ border: 1px solid #fff;
     .sidebar-widget{
         margin-top: 50px;
     }
+
+    .contact-text {
+      font-size: 16px;
+    }
+
+    .mob-text {
+    font-size: 20px;
+    }
+
     .sidebar-widget .widget{
         padding: 0 0 30px;
 overflow: hidden;
@@ -2483,9 +2493,16 @@ border-bottom: none;
 	padding-left: 0;
 	padding-right: 0;
 }
+
 .section-title h2 {
-	font-size: 40px;
+	font-size: 20px;
 }
+
+.cta-area .section-title h2 a{
+font-size: 15px;
+}
+
+
     .cta-title h2{
         text-align: left;
     }
