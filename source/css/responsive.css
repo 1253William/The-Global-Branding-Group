@@ -1400,7 +1400,10 @@ overflow: hidden;
 }
     .about-box ul li {
   text-align: center;
+}
 
+.about-box ul li a {
+  font-size: 15px;
 }
     .about-box ul li:last-child {
   padding-right: 0;
