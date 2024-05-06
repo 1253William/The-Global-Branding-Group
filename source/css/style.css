@@ -998,7 +998,7 @@ background: no-repeat;
 }
 
 .header-three .main-menu ul .has-sub a:hover {
-    color:var(--primary-background);
+    color:var(--primary-color);
 }
 
 .header-three .main-menu ul .has-sub .join-button:hover {
