@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Global Branding | Revolutionizing Branding, Empowering Success at The Global Branding</title>
+    <meta name="description" content="The Global Branding is Revolutionizing Branding, Empowering Success at The Global Branding ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/bg/GB colored Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+   font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #FFD700, #FF6347, #48D1CC);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.waitlist-form {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.questions {
+    text-align: left;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="waitlist-form">
+            <img src="./img/bg/GB colored Logo.png" alt="The Global Brand Logo" class="logo">
+            <h2>Welcome to our Waitlist!</h2>
+            <p>We're excited to have you join us.</p>
+            <form id="waitlist-form" action="https://usebasin.com/f/66062355aca6" method="POST">
+                <div class="questions">
+                    <div class="question active">
+                        <p>1. What is your industry? (e.g., E-commerce, Restaurant, Software)</p>
+                        <input type="text" name="industry" required autofocus>
+                    </div>
+                    <div class="question">
+                        <p>2. What are your top 2 digital marketing goals?</p>
+                        <input type="text" name="goals" required autofocus>
+                    </div>
+                    <div class="question">
+                        <p>3. Do you currently have a website? (Yes/No)</p>
+                        <select name="website" required>
+                            <option value="">Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>4. Are you active on any social media platforms?</p>
+                        <input type="checkbox" id="facebook" name="social_media[]" value="Facebook">
+                        <label for="facebook">Facebook</label><br>
+                        <input type="checkbox" id="instagram" name="social_media[]" value="Instagram">
+                        <label for="instagram">Instagram</label><br>
+                        <input type="checkbox" id="twitter" name="social_media[]" value="Twitter">
+                        <label for="twitter">Twitter</label><br>
+                    </div>
+                    <div class="question">
+                        <p>5. What is your preferred method of contact? (Email/Phone)</p>
+                        <select name="contact_method" required>
+                            <option value="">Select</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>6. Enter your chosen method of contact. (Email/Phone)</p>
+                        <input type="text" name="user-contact" required autofocus>
+                    </div>
+                    <div class="question">
+                        <p>Bonus: (Optional)</p>
+                        <textarea name="bonus"></textarea>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="back-btn" type="button">Back</button>
+                    <button id="next-btn" type="button">Next</button>
+                    <button id="submit-btn" type="submit" style="display: none;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for joining our waitlist! <br>
+                We'll be in touch soon as we are onboarding new clients and discuss how we can help you achieve your visibility goals through our branding and digital marketing expertise</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const questions = document.querySelectorAll('.question');
+    let currentQuestionIndex = 0;
+
+    function showQuestion(index) {
+        questions.forEach((question, idx) => {
+            if (idx === index) {
+                question.classList.add('active');
+            } else {
+                question.classList.remove('active');
+            }
+        });
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            showQuestion(currentQuestionIndex);
+        } else {
+            document.getElementById('submit-btn').style.display = 'inline-block';
+            document.getElementById('next-btn').style.display = 'none';
+            document.getElementById('back-btn').style.display = 'none';
+        }
+    }
+
+    
+    function showModal() {
+        const modal = document.getElementById('modal');
+        const closeButton = document.getElementsByClassName('close')[0];
+        modal.style.display = 'block';
+        closeButton.onclick = function() {
+            modal.style.display = 'none';
+        };
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    }
+
+    function previousQuestion() {
+        currentQuestionIndex--;
+        if (currentQuestionIndex >= 0) {
+            showQuestion(currentQuestionIndex);
+        }
+    }
+
+    const nextBtn = document.getElementById('next-btn');
+    nextBtn.addEventListener('click', nextQuestion);
+
+    const backBtn = document.getElementById('back-btn');
+    backBtn.addEventListener('click', previousQuestion);
+});
+
+    </script>
+</body>
+</html>
+

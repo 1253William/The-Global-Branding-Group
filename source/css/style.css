@@ -7,6 +7,7 @@
     --primary-color: #178EBC; /* Define primary color */
     --primary-background:#0851c0;
     --secondary-color: #C9621C; /* Define secondary color */
+    --secondary-hover:#df6210;
     --background-color: #f8f9fa; /* Define background color */
     --text-color: #212529; /* Define text color */
     --font-family: Arial, sans-serif; /* Define font family */
@@ -153,7 +154,7 @@ a:hover,
 }
 a,
 button {
-	color: #20304F;
+	color: white;
 	outline: medium none;
 }
 a:hover {
@@ -989,7 +990,7 @@ background: no-repeat;
   border: none;
 }
 
-.header-three .main-menu ul li a {
+.header-three .main-menu ul .has-sub a {
     color:#000;
 }
 .header-three .main-menu .sub-menu li a,.menu .children li a {
@@ -12603,4 +12604,37 @@ top: -120px;
 .insight-video .s-video-content {
   position: absolute;
   top: 45%;
+}
+
+/*waitlist*/
+
+.join-button {
+    display: inline-block;
+    padding: 10px 30px; /* Adjust padding as needed */
+    width: 150%;
+    background-color: var(--secondary-color); /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: box-shadow 0.3s ease; /* Transition for box shadow */
+}
+
+.mobile-menu .join-button {
+    color: white;
+}
+
+.join-button:hover {
+    color: white ;
+    background-color: var(--secondary-hover);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between menu items */
 }
