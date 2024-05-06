@@ -7,7 +7,7 @@
     --primary-color: #178EBC; /* Define primary color */
     --primary-background:#0851c0;
     --secondary-color: #C9621C; /* Define secondary color */
-    --secondary-hover:#df6210;
+    --secondary-hover:#fd7316;
     --background-color: #f8f9fa; /* Define background color */
     --text-color: #212529; /* Define text color */
     --font-family: Arial, sans-serif; /* Define font family */
@@ -551,7 +551,6 @@ top: -3px;
 }
 .main-menu ul li a {
 	display: block;
-	color: #20304F;
 	padding: 20px 0;
     font-weight:700;
 	position: relative;
@@ -993,6 +992,20 @@ background: no-repeat;
 .header-three .main-menu ul .has-sub a {
     color:#000;
 }
+
+.header-three .main-menu ul .has-sub-last a {
+    color:#fff;
+}
+
+.header-three .main-menu ul .has-sub a:hover {
+    color:var(--primary-background);
+}
+
+.header-three .main-menu ul .has-sub .join-button:hover {
+    color:white;
+    background-color: var(--secondary-hover);
+}
+
 .header-three .main-menu .sub-menu li a,.menu .children li a {
     color: #4f4f4f !important;
 }
@@ -7298,7 +7311,7 @@ top: 121px;
     color: #333;
 }
 .main-menu .mega-menu-column.has-sub a:hover {
-    color: #DCE864;
+    color: white;
 }
     li.has-sub.has-mega-menu:hover>ul{
     /*flexbox fallback for browsers that do not support CSS GRID lyout*/
@@ -12610,7 +12623,7 @@ top: -120px;
 
 .join-button {
     display: inline-block;
-    padding: 10px 30px; /* Adjust padding as needed */
+    padding: 10px 30px;
     width: 150%;
     background-color: var(--secondary-color); /* Green */
     color: white;
@@ -12628,7 +12641,7 @@ top: -120px;
     color: white;
 }
 
-.join-button:hover {
+.has-sub .join-button:hover {
     color: white ;
     background-color: var(--secondary-hover);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
@@ -12636,5 +12649,5 @@ top: -120px;
 
 .main-menu ul li {
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing between menu items */
+    margin-right: 40px;
 }

@@ -139,7 +139,9 @@ button:hover {
         <div class="waitlist-form">
             <img src="./img/bg/GB colored Logo.png" alt="The Global Brand Logo" class="logo">
             <h2>Welcome to our Waitlist!</h2>
-            <p>We're excited to have you join us.</p>
+            <p style="font-size: 13px;">We're excited to have you join us.</p>
+            <p style="font-size: 13px;">To better understand your needs and tailor our services, please answer a few quick questions:
+            </p>
             <form id="waitlist-form" action="https://usebasin.com/f/66062355aca6" method="POST">
                 <div class="questions">
                     <div class="question active">
@@ -147,7 +149,8 @@ button:hover {
                         <input type="text" name="industry" required autofocus>
                     </div>
                     <div class="question">
-                        <p>2. What are your top 2 digital marketing goals?</p>
+                        <p>2. What are your top 2 digital marketing goals? (e.g., Increase website traffic, Generate leads, Improve brand awareness)
+                        </p>
                         <input type="text" name="goals" required autofocus>
                     </div>
                     <div class="question">
@@ -159,13 +162,16 @@ button:hover {
                         </select>
                     </div>
                     <div class="question">
-                        <p>4. Are you active on any social media platforms?</p>
+                        <p>4. Are you active on any social media platforms? (Select all that apply: Facebook, Instagram, Twitter, etc.)
+                        </p>
                         <input type="checkbox" id="facebook" name="social_media[]" value="Facebook">
                         <label for="facebook">Facebook</label><br>
                         <input type="checkbox" id="instagram" name="social_media[]" value="Instagram">
                         <label for="instagram">Instagram</label><br>
                         <input type="checkbox" id="twitter" name="social_media[]" value="Twitter">
                         <label for="twitter">Twitter</label><br>
+                        <input type="checkbox" id="others" name="social_media[]" value="Others">
+                        <label for="others">Others</label><br>
                     </div>
                     <div class="question">
                         <p>5. What is your preferred method of contact? (Email/Phone)</p>
@@ -178,6 +184,11 @@ button:hover {
                     <div class="question">
                         <p>6. Enter your chosen method of contact. (Email/Phone)</p>
                         <input type="text" name="user-contact" required autofocus>
+                    </div>
+                    <div class="question">
+                        <p>7. Briefly describe to us your ideal customer or target audience.
+                        </p>
+                        <textarea name="customer-description" autofocus></textarea>
                     </div>
                     <div class="question">
                         <p>Bonus: (Optional)</p>
